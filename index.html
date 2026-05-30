@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="card">
+    <div class="top-row">
+      <h1>🌤 Weather Dashboard</h1>
+      <button id="darkModeBtn">🌙</button>
+    </div>
+
+    <div class="search-box">
+      <input id="cityInput" type="text" placeholder="Enter city name">
+      <button onclick="getWeather()">Search</button>
+    </div>
+
+    <button class="location-btn" onclick="getLocationWeather()">🌎 Use My Location</button>
+
+    <div id="dateTime"></div>
+
+    <div id="recentSearches"></div>
+
+    <div id="weatherResult"></div>
+
+    <h2 id="forecastTitle"></h2>
+    <div id="forecast"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
